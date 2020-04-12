@@ -28,7 +28,7 @@ public class UserContoller {
         Response response = new Response();
         User savedUser = userRepository.save(user);
         response.setStatus("Success");
-        return new ResponseEntity<Response>(response, HttpStatus.CREATED);
+        return new ResponseEntity<String>("User Created Successfully", HttpStatus.CREATED);
     }
 
 }
